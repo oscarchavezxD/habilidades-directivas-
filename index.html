@@ -67,10 +67,10 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21295.491508327817!2d-99.18639039928257!3d19.34547053209562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc48701fa0b%3A0xfa803a5abb13eb48!2sLa%20Creper%C3%ADa!5e0!3m2!1ses-419!2smx!4v1682058209156!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!--Se realiza contenedor para pie de página con datos-->
-    	<div id="contenedorDatos">
+    <div id="contenedorDatos">
     		<div id="contenedorRedes">
-               <a href="index.html"><img height="150" width="270" src="Fotos/LOGO BLANCO SIN FONDO.png" align="center"></a>     
-                <h3 id="follow" align="center">¡SÍGUENOS!</h3> 
+                <a href="index.html"><img height="150" width="270" src="Fotos/LOGO BLANCO SIN FONDO.png"></a>
+                <h3 id="follow">¡SÍGUENOS!</h3>
                 <map name="redesMap">
                     <area shape="circle" coords="16,19,20" href="https://twitter.com/" target="_Blank">
                     <area shape="circle" coords="52,19,20" href="https://www.facebook.com/" target="_Blank">
@@ -87,19 +87,50 @@
                 <a href="indexMenú.html">Menú</a>
                 <br>
                 <a href="indexGalería.html">Galería</a>
-                <br> 
+                <br>
                 <a href="indexPromociones.html">Promociones</a>
                 <h4 id ="CopyR">Delicrepas © 2023</h4>
             </div>
+            <div id="contenedorContacto">
+        <h4 id="contact">CONTACTO</h4>
+        <div id="Formulario">
+            <button type="button" id="btnS1" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#exampleModal">Envianos un mensaje
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresa tus Datos</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form >
+                                <label for="nombreApellido">Nombre</label>
+                                <input type="text" id="nombreApellido" class="input-padron" required>
+                                <label for="correoElectronico">Correo Electronico</label>
+                                <input type="email" id="correoElectronico"class="input-padron" required placeholder="email@dominio.com">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono"class="input-padron" required placeholder="(XX)XXXXXXXX">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" cols="50" rows="10" class="input-padron" required></textarea>
+                                <input type="submit" value="Enviar formulario" class="enviar">
+                            </form>
+                            <button type="button" id="btnS2" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
             <div id="contenedorHorarios">
-                <h4 id="horario" align="left">HORARIOS</h4>
-                <h4 id="horario1" align="left">Lunes a Jueves</h4>
-                <h4 id="horario2" align="left">10:00 – 22:00</h4>
-                <h4 id="horario3" align="left">Viernes a Domingo</h4>
-                <h4 id="horario4" align="left">9:00 – 22:30</h4>
+                <h4 id="horario">HORARIOS</h4>
+                <h4 id="horario1">Lunes a Jueves</h4>
+                <h4 id="horario2">10:00 – 22:00</h4>
+                <h4 id="horario3">Viernes a Domingo</h4>
+                <h4 id="horario4">9:00 – 22:30</h4>
             </div>
             <div id="contenedorFinal">
             </div>
-    	</div>
-    </body>
+</body>
 </html>
